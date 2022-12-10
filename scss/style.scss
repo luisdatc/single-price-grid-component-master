@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $backgroud;
+  padding: 0rem 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  &-white--body {
+    padding: 2rem 1.5rem;
+    &-tittle h1 {
+      font-size: 1.3rem;
+      color: $cyan;
+      font-weight: 700;
+    }
+    &-subtittle {
+      padding: 1.5rem 0 1.5rem 0;
+      font-weight: 700;
+      font-size: 1rem;
+      color: $yellow;
+    }
+    &-paragraph {
+      text-align: left;
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+      word-spacing: 1px;
+      color: $grayblue;
+    }
+  }
+
+  &-cyan {
+    background-color: $cyan;
+    &--body {
+      padding: 1.5rem 1.5rem;
+      &-tittle h2 {
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 400;
+      }
+      &-flex {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0 0.5rem 0;
+        & span strong {
+          font-size: 2rem;
+          color: white;
+          padding-right: 1rem;
+        }
+        & span {
+          color: $light;
+        }
+      }
+      & p {
+        color: white;
+        padding-bottom: 2rem;
+      }
+      & input {
+        width: 100%;
+        background-color: $yellow;
+        border: none;
+        border-radius: 5px;
+        padding: 0.8rem 0;
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+  &-light {
+    background-color: $light;
+    &--body {
+      padding: 1.5rem 5.5rem 1.5rem 1.5rem;
+      &-tittle h3 {
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 400;
+        padding-bottom: 1.5rem;
+      }
+      &-tittle ul {
+        color: white;
+        line-height: 1.2rem;
+        font-size: 0.85rem;
+        list-style: none;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .card-white {
+    width: 40rem;
+    &--body {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      &-paragrah {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .card-cyan,
+  .card-light {
+    width: 20rem;
+  }
+
+  .card-two-cards {
+    display: flex;
+  }
+}

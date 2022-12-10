@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(204deg, 43%, 93%);
+  padding: 0rem 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card-white--body {
+  padding: 2rem 1.5rem;
+}
+.card-white--body-tittle h1 {
+  font-size: 1.3rem;
+  color: hsl(179deg, 62%, 43%);
+  font-weight: 700;
+}
+.card-white--body-subtittle {
+  padding: 1.5rem 0 1.5rem 0;
+  font-weight: 700;
+  font-size: 1rem;
+  color: hsl(71deg, 73%, 54%);
+}
+.card-white--body-paragraph {
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  word-spacing: 1px;
+  color: hsl(218deg, 22%, 67%);
+}
+.card-cyan {
+  background-color: hsl(179deg, 62%, 43%);
+}
+.card-cyan--body {
+  padding: 1.5rem 1.5rem;
+}
+.card-cyan--body-tittle h2 {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 400;
+}
+.card-cyan--body-flex {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 0.5rem 0;
+}
+.card-cyan--body-flex span strong {
+  font-size: 2rem;
+  color: white;
+  padding-right: 1rem;
+}
+.card-cyan--body-flex span {
+  color: #4ABEBD;
+}
+.card-cyan--body p {
+  color: white;
+  padding-bottom: 2rem;
+}
+.card-cyan--body input {
+  width: 100%;
+  background-color: hsl(71deg, 73%, 54%);
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.card-light {
+  background-color: #4ABEBD;
+}
+.card-light--body {
+  padding: 1.5rem 5.5rem 1.5rem 1.5rem;
+}
+.card-light--body-tittle h3 {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+}
+.card-light--body-tittle ul {
+  color: white;
+  line-height: 1.2rem;
+  font-size: 0.85rem;
+  list-style: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .card-white {
+    width: 40rem;
+  }
+  .card-white--body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .card-white--body-paragrah {
+    font-size: 1rem;
+  }
+  .card-cyan,
+.card-light {
+    width: 20rem;
+  }
+  .card-two-cards {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
